@@ -4,87 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اتصل بنا - Store Ideal</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Cairo', sans-serif;
-            background: #fcfcf9;
-            color: #134252;
-            line-height: 1.6;
-        }
-        .header {
-            background: #fffffd;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 1px solid rgba(94, 82, 64, 0.12);
-        }
-        .logo { font-size: 24px; font-weight: 700; color: #21808d; text-decoration: none; }
-        .container { max-width: 700px; margin: 40px auto; padding: 0 20px; }
-        h1 { font-size: 36px; margin-bottom: 30px; color: #21808d; text-align: center; }
-        .contact-methods { display: grid; gap: 20px; margin: 30px 0; }
-        .contact-card {
-            background: #fffffd;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid rgba(94, 82, 64, 0.12);
-            text-align: center;
-        }
-        .contact-icon { font-size: 48px; margin-bottom: 15px; }
-        .contact-card h3 { font-size: 20px; margin-bottom: 10px; }
-        .contact-card a { color: #21808d; text-decoration: none; font-weight: 500; }
-        .whatsapp-btn {
-            display: inline-block;
-            background: #25D366;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 30px;
-            transition: background 0.3s;
-        }
-        .whatsapp-btn:hover { background: #1FA952; }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>:root{--color-cream-50:#FCFCF9;--color-charcoal-700:#1F2121;--color-charcoal-800:#262828;--color-slate-900:#13343B;--color-teal-300:#32B8C6;--color-orange-500:#FF6B35;--color-orange-600:#FF5722;--color-red-500:#FF3D00;--color-green-500:#4CAF50;--color-background:var(--color-cream-50);--color-surface:#FFFFFD;--color-text:var(--color-slate-900);--color-primary:var(--color-orange-500);--color-primary-hover:var(--color-orange-600);--color-accent:var(--color-red-500);--color-border:rgba(94,82,64,0.2);--color-card-border:rgba(94,82,64,0.12);--font-family-base:'Cairo',-apple-system,sans-serif;--shadow-sm:0 2px 4px rgba(0,0,0,0.1);--shadow-md:0 4px 8px rgba(0,0,0,0.15);--radius-base:12px;--radius-lg:16px;--space-16:16px;--space-20:20px;--space-24:24px;--space-32:32px}@media (prefers-color-scheme:dark){:root{--color-background:var(--color-charcoal-700);--color-surface:var(--color-charcoal-800);--color-text:#F5F5F5;--color-primary:var(--color-teal-300);--color-border:rgba(119,124,124,0.3);--color-card-border:rgba(119,124,124,0.2)}}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--font-family-base);background:var(--color-background);color:var(--color-text);line-height:1.8}.header{background:var(--color-surface);border-bottom:1px solid var(--color-card-border);position:sticky;top:0;z-index:1000;box-shadow:var(--shadow-sm)}.header-top{background:linear-gradient(135deg,var(--color-primary) 0%,var(--color-accent) 100%);color:white;padding:12px 0;text-align:center;font-size:15px;font-weight:600}.header-main{max-width:1280px;margin:0 auto;padding:var(--space-16) var(--space-20);display:flex;align-items:center;justify-content:space-between;gap:var(--space-20)}.logo{font-size:26px;font-weight:800;background:linear-gradient(135deg,var(--color-primary),var(--color-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}.search-bar{flex:1;max-width:600px}.search-bar input{width:100%;padding:14px 20px;border:2px solid var(--color-border);border-radius:var(--radius-base);font-size:15px;background:var(--color-background);color:var(--color-text);font-family:var(--font-family-base);transition:all 0.3s}.search-bar input:focus{outline:none;border-color:var(--color-primary);box-shadow:0 0 0 4px rgba(255,107,53,0.1)}.header-actions{display:flex;gap:var(--space-16);align-items:center}.icon-btn{background:none;border:none;cursor:pointer;padding:10px;color:var(--color-text);position:relative;font-size:24px;transition:transform 0.2s}.icon-btn:hover{transform:scale(1.1)}.badge{position:absolute;top:2px;left:2px;background:var(--color-accent);color:white;font-size:11px;padding:3px 7px;border-radius:10px;font-weight:700}.nav{background:var(--color-surface);border-bottom:1px solid var(--color-card-border)}.nav-container{max-width:1280px;margin:0 auto;padding:0 var(--space-20);display:flex;gap:var(--space-32)}.nav-link{padding:var(--space-16) 0;color:var(--color-text);text-decoration:none;font-weight:600;font-size:15px;transition:color 0.3s;border-bottom:3px solid transparent}.nav-link:hover,.nav-link.active{color:var(--color-primary);border-bottom-color:var(--color-primary)}.container{max-width:1280px;margin:0 auto;padding:var(--space-32) var(--space-20)}.page-title{font-size:42px;font-weight:800;margin-bottom:var(--space-24);color:var(--color-text);text-align:center}.content{background:var(--color-surface);padding:var(--space-32);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);line-height:1.9}.contact-info{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:var(--space-24);margin:var(--space-24) 0}.contact-card{background:var(--color-background);padding:var(--space-24);border-radius:var(--radius-base);border:2px solid var(--color-border);text-align:center}.contact-card h3{font-size:20px;font-weight:700;margin-bottom:12px;color:var(--color-primary)}.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:2000;align-items:center;justify-content:center}.modal.active{display:flex}.modal-content{background:var(--color-surface);border-radius:var(--radius-lg);padding:var(--space-32);max-width:600px;width:90%;max-height:80vh;overflow-y:auto}.modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-24)}.modal-title{font-size:24px;font-weight:700}.close-modal{background:none;border:none;font-size:28px;cursor:pointer;color:#626C71}.cart-item{display:flex;gap:var(--space-16);padding:var(--space-16);border:1px solid var(--color-card-border);border-radius:var(--radius-base);margin-bottom:12px}.cart-item-image{width:80px;height:80px;object-fit:cover;border-radius:var(--radius-base)}.cart-item-info{flex:1}.cart-item-name{font-weight:600;margin-bottom:8px}.cart-item-price{color:var(--color-primary);font-weight:600}.cart-total{font-size:20px;font-weight:700;text-align:left;margin:var(--space-24) 0;padding-top:var(--space-24);border-top:2px solid var(--color-card-border)}.checkout-btn{width:100%;background:#25D366;color:white;border:none;padding:var(--space-16);border-radius:var(--radius-base);font-weight:600;font-size:16px;cursor:pointer;font-family:var(--font-family-base)}.empty-cart{text-align:center;padding:var(--space-32);color:#626C71}.footer{background:var(--color-surface);border-top:1px solid var(--color-card-border);padding:var(--space-32) var(--space-20);margin-top:var(--space-32)}.footer-content{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:var(--space-32)}.footer-section h3{margin-bottom:var(--space-16);font-size:18px;font-weight:700}.footer-links{list-style:none}.footer-links li{margin-bottom:8px}.footer-links a{color:#626C71;text-decoration:none;transition:color 0.3s}.footer-links a:hover{color:var(--color-primary)}.footer-bottom{text-align:center;margin-top:var(--space-32);padding-top:var(--space-24);border-top:1px solid var(--color-card-border);color:#626C71;font-size:14px}</style>
 </head>
 <body>
-    <div class="header">
-        <a href="./" class="logo">🛍️ Store Ideal</a>
-    </div>
-    
-    <div class="container">
-        <h1>تواصل معنا</h1>
-        <p style="text-align: center; color: #626c71; margin-bottom: 30px;">نحن هنا لمساعدتك! تواصل معنا عبر أي من القنوات التالية</p>
-        
-        <div class="contact-methods">
-            <div class="contact-card">
-                <div class="contact-icon">📱</div>
-                <h3>واتساب</h3>
-                <p style="color: #626c71; margin: 10px 0;">تواصل مباشر وسريع</p>
-                <a href="https://wa.me/966501234567">+966 50 123 4567</a>
-            </div>
-            <div class="contact-card">
-                <div class="contact-icon">📧</div>
-                <h3>البريد الإلكتروني</h3>
-                <p style="color: #626c71; margin: 10px 0;">للاستفسارات التفصيلية</p>
-                <a href="mailto:info@store-ideal.com">info@store-ideal.com</a>
-            </div>
-            <div class="contact-card">
-                <div class="contact-icon">💻</div>
-                <h3>GitHub</h3>
-                <p style="color: #626c71; margin: 10px 0;">للدعم التقني والمساهمة</p>
-                <a href="https://github.com/sherow1982/store-ideal">sherow1982/store-ideal</a>
-            </div>
-            <div class="contact-card">
-                <div class="contact-icon">📍</div>
-                <h3>الموقع</h3>
-                <p style="color: #626c71; margin: 10px 0;">المملكة العربية السعودية</p>
-                <p>الرياض</p>
-            </div>
-        </div>
-        
-        <div style="text-align: center;">
-            <a href="https://wa.me/966501234567?text=مرحباً، أرغب في الاستفسار عن Store Ideal" class="whatsapp-btn">📱 ابدأ محادثة واتساب</a>
-        </div>
-    </div>
+<div class="header-top">🎉 عرض خاص: خصم يصل إلى 50% - احصل على شحن مجاني!</div>
+<header class="header"><div class="header-main"><a href="./" class="logo">🛍️ Store Ideal</a><div class="search-bar"><input type="search" placeholder="ابحث عن منتجاتك المفضلة..."></div><div class="header-actions"><button class="icon-btn" onclick="toggleCart()" aria-label="سلة التسوق">🛒<span class="badge" id="cartBadge">0</span></button></div></div></header>
+<nav class="nav"><div class="nav-container"><a href="./" class="nav-link">الرئيسية</a><a href="./about.html" class="nav-link">عن المتجر</a><a href="./contact.html" class="nav-link active">اتصل بنا</a></div></nav>
+<div class="container"><h1 class="page-title">اتصل بنا</h1><div class="content"><div class="contact-info"><div class="contact-card"><h3>📧 البريد الإلكتروني</h3><p>info@store-ideal.com</p></div><div class="contact-card"><h3>📱 واتساب</h3><p>+966 50 123 4567</p></div><div class="contact-card"><h3>📍 العنوان</h3><p>الرياض، المملكة العربية السعودية</p></div><div class="contact-card"><h3>⏰ ساعات العمل</h3><p>السبت - الخميس<br>9 صباحاً - 6 مساءً</p></div></div></div></div>
+<div class="modal" id="cartModal"><div class="modal-content"><div class="modal-header"><h2 class="modal-title">سلة التسوق</h2><button class="close-modal" onclick="toggleCart()">✕</button></div><div id="cartItems"><div class="empty-cart"><p>سلة التسوق فارغة</p><p style="font-size:48px;margin:20px 0">🛒</p></div></div><div id="cartFooter" style="display:none"><div class="cart-total">المجموع: <span id="cartTotal">0</span> ريال</div><button class="checkout-btn" onclick="checkout()">إتمام الطلب عبر واتساب 📱</button></div></div></div>
+<footer class="footer"><div class="footer-content"><div class="footer-section"><h3>عن Store Ideal</h3><p>نموذج متجر إلكتروني احترافي متكامل</p></div><div class="footer-section"><h3>روابط سريعة</h3><ul class="footer-links"><li><a href="./about.html">عن المتجر</a></li><li><a href="./privacy.html">سياسة الخصوصية</a></li><li><a href="./terms.html">شروط الخدمة</a></li><li><a href="./returns.html">سياسة الإرجاع</a></li></ul></div><div class="footer-section"><h3>خدمة العملاء</h3><ul class="footer-links"><li><a href="./contact.html">اتصل بنا</a></li><li><a href="./returns.html">الإرجاع</a></li><li><a href="./terms.html">الشحن والتوصيل</a></li></ul></div><div class="footer-section"><h3>تواصل معنا</h3><ul class="footer-links"><li><a href="mailto:info@store-ideal.com">📧 info@store-ideal.com</a></li><li><a href="https://wa.me/966501234567">📱 +966 50 123 4567</a></li><li>📍 الرياض، السعودية</li></ul></div></div><div class="footer-bottom"><p>© 2025 Store Ideal. جميع الحقوق محفوظة ❤️</p></div></footer>
+<script>let cart=JSON.parse(localStorage.getItem('storeCart'))||[];function updateCartUI(){const badge=document.getElementById('cartBadge'),itemsContainer=document.getElementById('cartItems'),cartFooter=document.getElementById('cartFooter'),totalElement=document.getElementById('cartTotal');badge.textContent=cart.reduce((sum,item)=>sum+item.quantity,0);if(cart.length===0){itemsContainer.innerHTML='<div class="empty-cart"><p>سلة التسوق فارغة</p><p style="font-size:48px;margin:20px 0">🛒</p></div>';cartFooter.style.display='none'}else{itemsContainer.innerHTML=cart.map(item=>`<div class="cart-item"><img src="${item.image}" alt="${item.name}" class="cart-item-image"><div class="cart-item-info"><div class="cart-item-name">${item.name}</div><div class="cart-item-price">${item.price} ريال × ${item.quantity}</div></div></div>`).join('');const total=cart.reduce((sum,item)=>sum+(item.price*item.quantity),0);totalElement.textContent=total.toFixed(2);cartFooter.style.display='block'}}function toggleCart(){document.getElementById('cartModal').classList.toggle('active')}function checkout(){if(cart.length===0)return;let message='🛍️ *طلب جديد من Store Ideal*\n\n*المنتجات:*\n';cart.forEach((item,index)=>{message+=`${index+1}. ${item.name}\n   السعر: ${item.price} ريال\n   الكمية: ${item.quantity}\n\n`});const total=cart.reduce((sum,item)=>sum+(item.price*item.quantity),0);message+=`*المجموع الكلي:* ${total.toFixed(2)} ريال\n\nأرجو تأكيد الطلب وإرسال عنوان التوصيل.`;window.open(`https://wa.me/966501234567?text=${encodeURIComponent(message)}`,'_blank')}document.getElementById('cartModal').addEventListener('click',(e)=>{if(e.target.id==='cartModal')toggleCart()});updateCartUI();</script>
 </body>
 </html>
