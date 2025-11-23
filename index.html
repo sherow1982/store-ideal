@@ -720,12 +720,10 @@
     </style>
 </head>
 <body>
-    <!-- Header Top -->
     <div class="header-top">
         🎉 عرض خاص: خصم يصل إلى 50% على جميع المنتجات - لفترة محدودة!
     </div>
 
-    <!-- Header -->
     <header class="header">
         <div class="header-main">
             <a href="./" class="logo">🛍️ Store Ideal</a>
@@ -735,7 +733,7 @@
             </div>
 
             <div class="header-actions">
-                <button class="icon-btn" onclick="toggleCart()">
+                <button class="icon-btn" onclick="toggleCart()" aria-label="سلة التسوق">
                     🛒
                     <span class="badge" id="cartBadge">0</span>
                 </button>
@@ -743,7 +741,6 @@
         </div>
     </header>
 
-    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
             <a href="./" class="nav-link active">الرئيسية</a>
@@ -752,14 +749,12 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <h1>مرحباً بك في Store Ideal</h1>
         <p>نموذج المتجر المثالي - كل ما تحتاجه لبناء متجرك الإلكتروني الاحترافي</p>
         <a href="#products" class="hero-btn">تسوق الآن</a>
     </section>
 
-    <!-- Categories -->
     <div class="container">
         <h2 class="section-title">تسوق حسب الفئة</h2>
         <div class="categories">
@@ -790,7 +785,6 @@
         </div>
     </div>
 
-    <!-- Products Section -->
     <div class="container" id="products">
         <div class="products-header">
             <h2 class="section-title" style="margin: 0;">المنتجات المميزة</h2>
@@ -802,12 +796,9 @@
             </div>
         </div>
 
-        <div class="products-grid" id="productsGrid">
-            <!-- Products will be loaded here by JavaScript -->
-        </div>
+        <div class="products-grid" id="productsGrid"></div>
     </div>
 
-    <!-- Features Section -->
     <section class="features">
         <div class="features-grid">
             <div class="feature">
@@ -833,7 +824,6 @@
         </div>
     </section>
 
-    <!-- Cart Modal -->
     <div class="modal" id="cartModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -858,7 +848,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -896,22 +885,20 @@
         </div>
     </footer>
 
-    <script src="./products.json" type="application/json"></script>
     <script>
-        let cart = [];
+        let cart = JSON.parse(localStorage.getItem('storeCart')) || [];
         let currentFilter = 'all';
         let currentSort = 'featured';
         let products = [];
 
-        // Load products from JSON
         fetch('./products.json')
             .then(response => response.json())
             .then(data => {
                 products = data.products;
                 displayProducts();
+                updateCartUI();
             })
             .catch(() => {
-                // Fallback products if JSON fails
                 products = [
                     {
                         id: 1,
@@ -924,29 +911,17 @@
                         rating: 4.5,
                         reviews: 128,
                         badge: 'جديد'
-                    },
-                    {
-                        id: 2,
-                        name: 'ساعة ذكية رياضية',
-                        category: 'electronics',
-                        price: 799,
-                        oldPrice: 999,
-                        image: 'https://via.placeholder.com/400x400/1d7480/ffffff?text=ساعة',
-                        description: 'تتبع النشاط والصحة مع شاشة AMOLED',
-                        rating: 4.8,
-                        reviews: 256,
-                        badge: 'الأكثر مبيعاً'
                     }
                 ];
                 displayProducts();
+                updateCartUI();
             });
 
-        // Initialize
         document.addEventListener('DOMContentLoaded', () => {
             setupSearch();
+            updateCartUI();
         });
 
-        // Display Products
         function displayProducts() {
             const grid = document.getElementById('productsGrid');
             let filteredProducts = products;
@@ -1078,6 +1053,7 @@
             } else {
                 cart.push({ ...product, quantity: 1 });
             }
+            localStorage.setItem('storeCart', JSON.stringify(cart));
             updateCartUI();
             event.target.textContent = '✓ تمت الإضافة';
             setTimeout(() => { event.target.textContent = 'أضف للسلة'; }, 1500);
