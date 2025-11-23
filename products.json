@@ -1,0 +1,232 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "سماعات لاسلكية احترافية",
+      "category": "electronics",
+      "price": 299,
+      "oldPrice": 499,
+      "image": "https://via.placeholder.com/400x400/21808d/ffffff?text=سماعات",
+      "description": "سماعات بلوتوث عالية الجودة مع إلغاء الضوضاء وبطارية تدوم حتى 30 ساعة",
+      "rating": 4.5,
+      "reviews": 128,
+      "badge": "جديد",
+      "features": [
+        "إلغاء ضوضاء نشط",
+        "بطارية 30 ساعة",
+        "Bluetooth 5.0",
+        "مقاومة للماء IPX4"
+      ],
+      "sku": "ELEC-HEAD-001"
+    },
+    {
+      "id": 2,
+      "name": "ساعة ذكية رياضية",
+      "category": "electronics",
+      "price": 799,
+      "oldPrice": 999,
+      "image": "https://via.placeholder.com/400x400/1d7480/ffffff?text=ساعة",
+      "description": "تتبع النشاط والصحة مع شاشة AMOLED عالية الدقة",
+      "rating": 4.8,
+      "reviews": 256,
+      "badge": "الأكثر مبيعاً",
+      "features": [
+        "شاشة AMOLED 1.4 بوصة",
+        "مقياس نبض دقيق",
+        "GPS مدمج",
+        "مقاومة للماء 50م"
+      ],
+      "sku": "ELEC-WATCH-002"
+    },
+    {
+      "id": 3,
+      "name": "حقيبة ظهر عصرية",
+      "category": "fashion",
+      "price": 199,
+      "oldPrice": null,
+      "image": "https://via.placeholder.com/400x400/32b8c6/ffffff?text=حقيبة",
+      "description": "حقيبة عملية ومريحة للاستخدام اليومي مع جيب لللابتوب",
+      "rating": 4.3,
+      "reviews": 89,
+      "badge": null,
+      "features": [
+        "جيب للابتوب 15 بوصة",
+        "مادة مقاومة للماء",
+        "أحزمة مريحة",
+        "تصميم عصري"
+      ],
+      "sku": "FASH-BAG-003"
+    },
+    {
+      "id": 4,
+      "name": "عطر فاخر للرجال",
+      "category": "beauty",
+      "price": 349,
+      "oldPrice": 450,
+      "image": "https://via.placeholder.com/400x400/2da6b2/ffffff?text=عطر",
+      "description": "عطر رجالي فواح يدوم طويلاً مع رائحة خشبية جذابة",
+      "rating": 4.7,
+      "reviews": 195,
+      "badge": "عرض خاص",
+      "features": [
+        "100مل Eau de Parfum",
+        "رائحة خشبية",
+        "يدوم 8-12 ساعة",
+        "عبوة فاخرة"
+      ],
+      "sku": "BEAU-PERF-004"
+    },
+    {
+      "id": 5,
+      "name": "وسادة ذاكرة طبية",
+      "category": "home",
+      "price": 159,
+      "oldPrice": null,
+      "image": "https://via.placeholder.com/400x400/1a6873/ffffff?text=وسادة",
+      "description": "وسادة مريحة لنوم هادئ وصحي مع دعم للرقبة",
+      "rating": 4.6,
+      "reviews": 142,
+      "badge": null,
+      "features": [
+        "إسفنج ذاكرة عالي الجودة",
+        "دعم عنق ورقبة",
+        "غطاء قابل للغسيل",
+        "مقاس 50x70سم"
+      ],
+      "sku": "HOME-PILL-005"
+    },
+    {
+      "id": 6,
+      "name": "حذاء رياضي مريح",
+      "category": "sports",
+      "price": 449,
+      "oldPrice": 599,
+      "image": "https://via.placeholder.com/400x400/21808d/ffffff?text=حذاء",
+      "description": "حذاء رياضي خفيف ومرن للجري والتدريب",
+      "rating": 4.4,
+      "reviews": 167,
+      "badge": "خصم 25%",
+      "features": [
+        "خفيف ومرن",
+        "نعل مقاوم للانزلاق",
+        "تقنية تنفس الهواء",
+        "توفر مقاسات متعددة"
+      ],
+      "sku": "SPOR-SHOE-006"
+    },
+    {
+      "id": 7,
+      "name": "كتاب التنمية الذاتية",
+      "category": "books",
+      "price": 79,
+      "oldPrice": null,
+      "image": "https://via.placeholder.com/400x400/1d7480/ffffff?text=كتاب",
+      "description": "دليل شامل للنجاح والتطوير الشخصي",
+      "rating": 4.9,
+      "reviews": 312,
+      "badge": null,
+      "features": [
+        "280 صفحة",
+        "محتوى عملي",
+        "أمثلة واقعية",
+        "تمارين تطبيقية"
+      ],
+      "sku": "BOOK-SELF-007"
+    },
+    {
+      "id": 8,
+      "name": "آلة تحضير القهوة",
+      "category": "home",
+      "price": 599,
+      "oldPrice": 799,
+      "image": "https://via.placeholder.com/400x400/32b8c6/ffffff?text=قهوة",
+      "description": "آلة قهوة أوتوماتيكية بتقنية حديثة",
+      "rating": 4.5,
+      "reviews": 98,
+      "badge": "جديد",
+      "features": [
+        "ضغط 15 بار",
+        "خزان ماء 1.2 لتر",
+        "بخاخ حليب",
+        "سهلة التنظيف"
+      ],
+      "sku": "HOME-COFF-008"
+    },
+    {
+      "id": 9,
+      "name": "نظارات شمسية عصرية",
+      "category": "fashion",
+      "price": 249,
+      "oldPrice": null,
+      "image": "https://via.placeholder.com/400x400/2da6b2/ffffff?text=نظارات",
+      "description": "نظارات بحماية UV400 وتصميم أنيق",
+      "rating": 4.2,
+      "reviews": 76,
+      "badge": null,
+      "features": [
+        "حماية UV400",
+        "عدسات مستقطبة",
+        "إطار متين",
+        "حقيبة فاخرة"
+      ],
+      "sku": "FASH-SUNG-009"
+    },
+    {
+      "id": 10,
+      "name": "جهاز لوحي 10 بوصة",
+      "category": "electronics",
+      "price": 1299,
+      "oldPrice": 1599,
+      "image": "https://via.placeholder.com/400x400/1a6873/ffffff?text=تابلت",
+      "description": "تابلت بمعالج قوي وشاشة عالية الدقة",
+      "rating": 4.6,
+      "reviews": 203,
+      "badge": "الأكثر مبيعاً",
+      "features": [
+        "شاشة 10.1 FHD+",
+        "معالج 8 أنوية",
+        "4GB RAM + 64GB",
+        "بطارية 7000mAh"
+      ],
+      "sku": "ELEC-TAB-010"
+    },
+    {
+      "id": 11,
+      "name": "سجادة يوغا متطورة",
+      "category": "sports",
+      "price": 129,
+      "oldPrice": null,
+      "image": "https://via.placeholder.com/400x400/21808d/ffffff?text=يوغا",
+      "description": "سجادة مريحة مع خطوط توجيهية",
+      "rating": 4.7,
+      "reviews": 134,
+      "badge": null,
+      "features": [
+        "سمك 6مم",
+        "مادة TPE صديقة للبيئة",
+        "خطوط توجيهية",
+        "حقيبة حمل"
+      ],
+      "sku": "SPOR-YOGA-011"
+    },
+    {
+      "id": 12,
+      "name": "مجموعة عناية بالبشرة",
+      "category": "beauty",
+      "price": 399,
+      "oldPrice": 549,
+      "image": "https://via.placeholder.com/400x400/1d7480/ffffff?text=عناية",
+      "description": "مجموعة كاملة للعناية اليومية بالبشرة",
+      "rating": 4.8,
+      "reviews": 221,
+      "badge": "عرض خاص",
+      "features": [
+        "غسول + تونر + سيروم",
+        "مكونات طبيعية",
+        "لجميع أنواع البشرة",
+        "نتائج مرئية"
+      ],
+      "sku": "BEAU-SKIN-012"
+    }
+  ]
+}
