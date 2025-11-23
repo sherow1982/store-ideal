@@ -1,0 +1,35 @@
+{
+  "name": "Store Ideal - نموذج متجر إلكتروني",
+  "short_name": "Store Ideal",
+  "description": "متجر إلكتروني احترافي على GitHub Pages",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fcfcf9",
+  "theme_color": "#21808d",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192/21808d/ffffff?text=SI",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512/21808d/ffffff?text=SI",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "business"],
+  "screenshots": [
+    {
+      "src": "https://via.placeholder.com/1280x720/21808d/ffffff?text=Screenshot",
+      "sizes": "1280x720",
+      "type": "image/png"
+    }
+  ]
+}
