@@ -1,17 +1,17 @@
-/* Store Ideal - العربي الفخم المبهر */
+/* Store Ideal - ثيم فاتح مبهر عصري */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&display=swap');
 
 :root {
-  --color-bg: #0F0E0A;
-  --color-bg-light: #1A1915;
+  --color-bg: #FFFBF5;
+  --color-bg-light: #FFF9F0;
   --color-gold: #D4AF37;
-  --color-gold-dark: #9B7D2F;
-  --color-gold-light: #F4E4C1;
   --color-accent: #E8A333;
-  --color-text: #F5E6D3;
-  --color-text-dark: #2C2416;
-  --color-shadow: 0 12px 40px rgba(212,175,55,0.25);
-  --color-shadow-lg: 0 20px 60px rgba(212,175,55,0.35);
+  --color-rose: #FF6B9D;
+  --color-text: #2C2416;
+  --color-text-light: #5A4A3A;
+  --color-white: #FFFBF5;
+  --color-shadow: 0 8px 30px rgba(212,175,55,0.12);
+  --color-shadow-lg: 0 15px 50px rgba(232,163,51,0.15);
   --radius: 24px;
   --font-family: 'Cairo', Arial, sans-serif;
 }
@@ -19,7 +19,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  background: linear-gradient(135deg, #0F0E0A 0%, #1A1915 100%);
+  background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-family);
   line-height: 1.9;
@@ -27,22 +27,21 @@ body {
 }
 
 .header-top {
-  background: linear-gradient(90deg, var(--color-gold) 0%, var(--color-accent) 100%);
-  color: var(--color-text-dark);
-  padding: 16px;
+  background: linear-gradient(90deg, #FFD700 0%, #FFC700 50%, #FFB700 100%);
+  color: #2C2416;
+  padding: 14px;
   text-align: center;
   font-weight: 900;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
+  font-size: 1.15rem;
+  letter-spacing: 1.5px;
   box-shadow: var(--color-shadow-lg);
-  text-transform: uppercase;
 }
 
 .header {
-  background: linear-gradient(180deg, #1A1915 0%, #0F0E0A 100%);
+  background: linear-gradient(180deg, #FFFBF5 0%, #FFF9F0 100%);
   box-shadow: var(--color-shadow);
   position: sticky; top: 0; z-index: 900;
-  border-bottom: 3px solid var(--color-gold);
+  border-bottom: 3px solid #FFD700;
 }
 
 .header-main {
@@ -58,18 +57,16 @@ body {
 .logo {
   font-size: 2.8rem;
   font-weight: 900;
-  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-accent) 100%);
+  background: linear-gradient(135deg, #D4AF37 0%, #E8A333 50%, #FF6B9D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 2px;
   text-decoration: none;
-  text-transform: uppercase;
-  filter: drop-shadow(0 0 15px rgba(212,175,55,0.4));
 }
 
 .search-bar input {
-  background: rgba(244,228,193,0.08);
-  border: 2px solid var(--color-gold);
+  background: linear-gradient(135deg, #FFF9F0 0%, #FFFBF5 100%);
+  border: 2.5px solid #FFD700;
   color: var(--color-text);
   border-radius: var(--radius);
   padding: 14px 20px;
@@ -80,8 +77,8 @@ body {
 }
 
 .search-bar input:focus {
-  box-shadow: 0 0 20px rgba(212,175,55,0.5);
-  border-color: var(--color-accent);
+  box-shadow: 0 0 20px rgba(232,163,51,0.4);
+  border-color: #E8A333;
 }
 
 .nav-container {
@@ -90,11 +87,11 @@ body {
   padding: 0 32px;
   display: flex;
   gap: 40px;
-  border-bottom: 2px solid rgba(212,175,55,0.2);
+  border-bottom: 2px solid #FFE4B5;
 }
 
 .nav-link {
-  color: var(--color-gold);
+  color: var(--color-text);
   text-decoration: none;
   font-weight: 800;
   font-size: 1.15rem;
@@ -105,40 +102,39 @@ body {
 }
 
 .nav-link:hover, .nav-link.active {
-  color: var(--color-accent);
-  border-bottom-color: var(--color-accent);
-  text-shadow: 0 0 10px rgba(232,163,51,0.5);
+  color: #E8A333;
+  border-bottom-color: #FF6B9D;
+  text-shadow: 0 0 8px rgba(255,107,157,0.2);
 }
 
 .hero {
-  background: linear-gradient(135deg, rgba(212,175,55,0.15) 0%, rgba(232,163,51,0.08) 100%);
+  background: linear-gradient(135deg, #FFF9F0 0%, #FFFBF5 100%);
   padding: 80px 20px;
   text-align: center;
-  border-top: 2px solid var(--color-gold);
-  border-bottom: 2px solid var(--color-accent);
+  border-top: 2px solid #FFD700;
+  border-bottom: 2px solid #FF6B9D;
 }
 
 .hero h1 {
   font-size: 3.5rem;
   font-weight: 900;
-  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-accent) 100%);
+  background: linear-gradient(135deg, #D4AF37 0%, #E8A333 50%, #FF6B9D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
-  text-shadow: 0 0 30px rgba(212,175,55,0.3);
   letter-spacing: 2px;
 }
 
 .hero p {
   font-size: 1.4rem;
-  color: var(--color-gold-light);
+  color: var(--color-text-light);
   margin-bottom: 30px;
   font-weight: 600;
 }
 
 .hero-btn {
-  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-accent) 100%);
-  color: var(--color-text-dark);
+  background: linear-gradient(135deg, #FFD700 0%, #E8A333 100%);
+  color: #2C2416;
   padding: 20px 50px;
   border: none;
   border-radius: 50px;
@@ -146,15 +142,14 @@ body {
   font-weight: 900;
   font-family: var(--font-family);
   cursor: pointer;
-  box-shadow: 0 10px 30px rgba(212,175,55,0.4);
+  box-shadow: 0 10px 30px rgba(232,163,51,0.25);
   transition: all 0.3s;
-  text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 
 .hero-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(212,175,55,0.6);
+  box-shadow: 0 15px 40px rgba(232,163,51,0.4);
 }
 
 .container {
@@ -167,11 +162,11 @@ body {
   font-size: 2.8rem;
   font-weight: 900;
   text-align: center;
-  color: var(--color-gold);
+  background: linear-gradient(135deg, #D4AF37 0%, #E8A333 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 50px;
-  text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 0 0 20px rgba(212,175,55,0.3);
 }
 
 .categories, .products-grid {
@@ -182,38 +177,38 @@ body {
 }
 
 .category-card, .product-card {
-  background: linear-gradient(135deg, rgba(212,175,55,0.1) 0%, rgba(232,163,51,0.05) 100%);
-  border: 2px solid var(--color-gold);
+  background: linear-gradient(135deg, #FFFBF5 0%, #FFF9F0 100%);
+  border: 2.5px solid #FFE4B5;
   border-radius: var(--radius);
   padding: 30px;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s;
-  box-shadow: 0 8px 20px rgba(212,175,55,0.15);
+  box-shadow: 0 8px 20px rgba(212,175,55,0.08);
 }
 
 .category-card:hover, .product-card:hover {
-  transform: scale(1.05) translateY(-8px);
+  transform: scale(1.06) translateY(-8px);
   box-shadow: var(--color-shadow-lg);
-  border-color: var(--color-accent);
-  background: linear-gradient(135deg, rgba(212,175,55,0.2) 0%, rgba(232,163,51,0.15) 100%);
+  border-color: #E8A333;
+  background: linear-gradient(135deg, #FFFBF5 0%, #FFE7D9 100%);
 }
 
 .category-icon {
   font-size: 3.5rem;
   margin-bottom: 15px;
-  filter: drop-shadow(0 0 10px rgba(212,175,55,0.3));
+  filter: drop-shadow(0 2px 5px rgba(232,163,51,0.15));
 }
 
 .category-name {
   font-weight: 800;
-  color: var(--color-gold);
+  color: #2C2416;
   font-size: 1.2rem;
   letter-spacing: 1px;
 }
 
 .product-price {
-  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-accent) 100%);
+  background: linear-gradient(135deg, #D4AF37 0%, #E8A333 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.8rem;
@@ -221,8 +216,8 @@ body {
 }
 
 .add-to-cart, .checkout-btn {
-  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-accent) 100%);
-  color: var(--color-text-dark);
+  background: linear-gradient(135deg, #FFD700 0%, #E8A333 100%);
+  color: #2C2416;
   border: none;
   padding: 12px 24px;
   border-radius: 25px;
@@ -230,79 +225,72 @@ body {
   font-family: var(--font-family);
   cursor: pointer;
   font-size: 1rem;
-  box-shadow: 0 6px 15px rgba(212,175,55,0.3);
+  box-shadow: 0 6px 15px rgba(232,163,51,0.2);
   transition: all 0.3s;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .add-to-cart:hover, .checkout-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(212,175,55,0.5);
+  box-shadow: 0 10px 25px rgba(232,163,51,0.35);
 }
 
 .product-badge {
-  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-accent) 100%);
-  color: var(--color-text-dark);
+  background: linear-gradient(135deg, #FF6B9D 0%, #E8A333 100%);
+  color: white;
   padding: 8px 16px;
   border-radius: 50px;
   font-weight: 900;
   font-size: 1rem;
-  box-shadow: 0 4px 15px rgba(212,175,55,0.4);
+  box-shadow: 0 4px 15px rgba(255,107,157,0.25);
   letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.feature {
-  text-align: center;
 }
 
 .feature-icon {
   font-size: 3rem;
-  color: var(--color-gold);
+  color: #E8A333;
   margin-bottom: 15px;
-  filter: drop-shadow(0 0 10px rgba(212,175,55,0.3));
 }
 
 .feature-title {
   font-size: 1.4rem;
   font-weight: 900;
-  color: var(--color-gold);
+  color: #2C2416;
   margin-bottom: 10px;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .feature-text {
-  color: var(--color-gold-light);
+  color: var(--color-text-light);
   font-size: 1.05rem;
 }
 
 .footer {
-  background: linear-gradient(180deg, #1A1915 0%, #0F0E0A 100%);
-  border-top: 3px solid var(--color-gold);
+  background: linear-gradient(180deg, #FFF9F0 0%, #FFFBF5 100%);
+  border-top: 3px solid #FFD700;
   padding: 40px 32px 20px;
   margin-top: 50px;
-  box-shadow: 0 -10px 40px rgba(212,175,55,0.2);
+  box-shadow: 0 -8px 30px rgba(212,175,55,0.1);
 }
 
 .footer-section h3 {
   font-size: 1.25rem;
   font-weight: 900;
-  color: var(--color-gold);
+  background: linear-gradient(135deg, #D4AF37 0%, #E8A333 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 15px;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .footer-section p {
-  color: var(--color-gold-light);
+  color: var(--color-text-light);
   font-size: 1.05rem;
   line-height: 1.8;
 }
 
 .footer-links a {
-  color: var(--color-gold);
+  color: #E8A333;
   text-decoration: none;
   font-weight: 700;
   transition: all 0.3s;
@@ -310,20 +298,19 @@ body {
 }
 
 .footer-links a:hover {
-  color: var(--color-accent);
-  text-shadow: 0 0 10px rgba(232,163,51,0.5);
+  color: #FF6B9D;
+  text-shadow: 0 0 8px rgba(255,107,157,0.2);
 }
 
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 2px solid rgba(212,175,55,0.2);
-  color: var(--color-gold);
+  border-top: 2px solid #FFE4B5;
+  color: #2C2416;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 1.5px;
-  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
