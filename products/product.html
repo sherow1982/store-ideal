@@ -3,29 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>منتج - Store Ideal</title>
+  <title>منتج</title>
   <link rel="stylesheet" href="https://sherow1982.github.io/store-ideal/style.css">
 </head>
 <body>
   <a href="https://wa.me/201110760081" class="whatsapp-floating" target="_blank">💬</a>
   <header class="header">
     <div class="header-main">
-      <a href="https://sherow1982.github.io/store-ideal/" class="logo">🛍️ Store Ideal</a>
+      <a href="https://sherow1982.github.io/store-ideal/" class="logo">🌟 دخون</a>
     </div>
   </header>
   <div class="container">
-    <div class="product-card" style="max-width:520px;margin:40px auto;height:auto;">
-      <img id="productImage" src="https://via.placeholder.com/400x320/D4AF37/fff?text=منتج" class="product-image" style="width:100%;margin:0 0 20px 0;">
-      <h1 class="product-name" id="productName">عطر ملكي فاخر</h1>
-      <div class="product-description" id="productDesc">روائح شرقية أصيلة</div>
-      <div class="product-price" id="productPrice">430 ريال</div>
+    <div class="card" style="max-width:500px;margin:40px auto;">
+      <img src="https://via.placeholder.com/500x300" style="width:100%;border-radius:15px 15px 0 0;height:300px;object-fit:cover;">
+      <div class="info">
+        <h1 class="title" id="title">دخون فاخر</h1>
+        <p class="desc" id="desc">دخون أصلي من الإمارات</p>
+        <div class="bottom">
+          <div class="price">
+            <span class="new" id="price">89 درهم</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <footer class="footer"><div class="footer-bottom">© 2025 Store Ideal</div></footer>
-  <script>
-    const products = {1: {name: 'عطر ملكي فاخر', desc: 'رائحة شرقية 12 ساعة'}, 2: {name: 'ساعة ذكية', desc: 'تتبع الصحة'}, 3: {name: 'حقيبة جلدية', desc: 'جلد طبيعي 100%'}};
-    const id = new URLSearchParams(window.location.search).get('id') || 1;
-    if(products[id]) { document.getElementById('productName').innerText = products[id].name; document.getElementById('productDesc').innerText = products[id].desc; }
-  </script>
+  <footer class="footer"><div class="footer-bottom">© 2025 متجر دخون الإمارات</div></footer>
 </body>
 </html>
