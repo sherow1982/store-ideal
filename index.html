@@ -4,40 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Store Ideal - متجر الفاخر</title>
-  <meta name="description" content="متجر إلكتروني فاخر - منتجات أصلية - توصيل مجاني - دفع آمن">
   <link rel="stylesheet" href="https://sherow1982.github.io/store-ideal/style.css">
 </head>
 <body>
-  <a href="https://wa.me/201110760081" class="whatsapp-floating" title="تواصل معنا عبر واتساب">💬</a>
+  <a href="https://wa.me/201110760081" class="whatsapp-floating" target="_blank" data-aos="zoom-in" data-aos-duration="500">💬</a>
 
-  <div class="header-top">🔥 خصومات حتى 50% لفترة محدودة فقط!</div>
+  <div class="header-top" data-aos="fade-down">🔥 خصومات حتى 50% لفترة محدودة فقط!</div>
   <header class="header">
     <div class="header-main">
-      <a href="https://sherow1982.github.io/store-ideal/" class="logo">🛍️ Store Ideal</a>
-      <div class="search-bar">
+      <a href="https://sherow1982.github.io/store-ideal/" class="logo" data-aos="fade-left">🛍️ Store Ideal</a>
+      <div class="search-bar" data-aos="fade-down">
         <input type="search" placeholder="ابحث عن منتجاتك...">
       </div>
-      <div class="header-actions">
+      <div class="header-actions" data-aos="fade-right">
         <button class="icon-btn">🛒<span class="badge">0</span></button>
       </div>
     </div>
   </header>
   <nav class="nav">
-    <div class="nav-container">
+    <div class="nav-container" data-aos="fade-up">
       <a href="https://sherow1982.github.io/store-ideal/" class="nav-link active">الرئيسية</a>
       <a href="https://sherow1982.github.io/store-ideal/about.html" class="nav-link">عن المتجر</a>
       <a href="https://sherow1982.github.io/store-ideal/contact.html" class="nav-link">اتصل بنا</a>
     </div>
   </nav>
-  <section class="hero">
+  <section class="hero" data-aos="fade-up" data-aos-duration="800">
     <h1>تسوق فاخر عربي عصري</h1>
     <p>منتجات أصلية مختارة بعناية - توصيل فوري - دفع آمن</p>
     <a href="#products" class="hero-btn">تسوق الآن</a>
   </section>
   <div class="container" id="products">
-    <h2 class="section-title">منتجاتنا المميزة</h2>
+    <h2 class="section-title" data-aos="fade-up">منتجاتنا المميزة</h2>
     <div class="products-grid">
-      <div class="product-card" onclick="goToProduct(1)">
+      <div class="product-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
         <img src="https://via.placeholder.com/260x220/FFD700/fff?text=عطر" class="product-image">
         <span class="product-badge">جديد</span>
         <div class="product-name">عطر ملكي فاخر</div>
@@ -45,11 +44,11 @@
         <div class="product-price">249 ريال</div>
         <div class="product-footer">
           <button class="add-to-cart">أضف للسلة</button>
-          <button class="view-more" onclick="event.stopPropagation()">شاهد المزيد</button>
+          <a href="https://sherow1982.github.io/store-ideal/products/product.html?id=1" class="view-more">شاهد المزيد</a>
         </div>
       </div>
 
-      <div class="product-card" onclick="goToProduct(2)">
+      <div class="product-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
         <img src="https://via.placeholder.com/260x220/E8A333/fff?text=ساعة" class="product-image">
         <span class="product-badge">الأكثر مبيعاً</span>
         <div class="product-name">ساعة ذكية فاخرة</div>
@@ -57,40 +56,40 @@
         <div class="product-price">599 ريال</div>
         <div class="product-footer">
           <button class="add-to-cart">أضف للسلة</button>
-          <button class="view-more" onclick="event.stopPropagation()">شاهد المزيد</button>
+          <a href="https://sherow1982.github.io/store-ideal/products/product.html?id=2" class="view-more">شاهد المزيد</a>
         </div>
       </div>
 
-      <div class="product-card" onclick="goToProduct(3)">
+      <div class="product-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
         <img src="https://via.placeholder.com/260x220/FF6B9D/fff?text=حقيبة" class="product-image">
         <div class="product-name">حقيبة جلدية أصلية</div>
         <div class="product-description">حقيبة يد فاخرة من جلد طبيعي.</div>
         <div class="product-price">899 ريال</div>
         <div class="product-footer">
           <button class="add-to-cart">أضف للسلة</button>
-          <button class="view-more" onclick="event.stopPropagation()">شاهد المزيد</button>
+          <a href="https://sherow1982.github.io/store-ideal/products/product.html?id=3" class="view-more">شاهد المزيد</a>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="features-grid">
-      <div class="feature">
+      <div class="feature" data-aos="fade-up" data-aos-delay="100">
         <div class="feature-icon">🚚</div>
         <div class="feature-title">توصيل مجاني</div>
         <div class="feature-text">لجميع الطلبات فوق 200 ريال</div>
       </div>
-      <div class="feature">
+      <div class="feature" data-aos="fade-up" data-aos-delay="200">
         <div class="feature-icon">🔒</div>
         <div class="feature-title">دفع آمن</div>
         <div class="feature-text">معاملات مشفرة 100%</div>
       </div>
-      <div class="feature">
+      <div class="feature" data-aos="fade-up" data-aos-delay="300">
         <div class="feature-icon">↩️</div>
         <div class="feature-title">إرجاع مجاني</div>
         <div class="feature-text">خلال 14 يوم</div>
       </div>
-      <div class="feature">
+      <div class="feature" data-aos="fade-up" data-aos-delay="400">
         <div class="feature-icon">💬</div>
         <div class="feature-title">دعم 24/7</div>
         <div class="feature-text">فريق جاهز دائماً</div>
@@ -115,17 +114,16 @@
         <h3>تواصل معنا</h3>
         <ul class="footer-links">
           <li><a href="mailto:info@store.com">📧 info@store.com</a></li>
-          <li><a href="https://wa.me/201110760081">📱 واتساب</a></li>
+          <li><a href="https://wa.me/201110760081" target="_blank">📱 واتساب</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">© 2025 Store Ideal - جميع الحقوق محفوظة ❤️</div>
   </footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    function goToProduct(productId) {
-      window.location.href = 'https://sherow1982.github.io/store-ideal/products/product.html?id=' + productId;
-    }
+    AOS.init();
   </script>
 </body>
 </html>
