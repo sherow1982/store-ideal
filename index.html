@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Store Ideal - متجر الفاخر</title>
-  <meta name="description" content="متجر إلكتروني فاخر - منتجات أصلية - توصيل مجاني - دفع آمن">
   <link rel="stylesheet" href="https://sherow1982.github.io/store-ideal/style.css">
 </head>
 <body>
@@ -37,38 +36,86 @@
   <div class="container" id="products">
     <h2 class="section-title">منتجاتنا المميزة</h2>
     <div class="products-grid">
+      <!-- كارت 1 -->
       <div class="product-card">
-        <img src="https://via.placeholder.com/260x220/FFD700/fff?text=عطر" class="product-image">
-        <span class="product-badge">جديد</span>
-        <div class="product-name">عطر ملكي فاخر</div>
-        <div class="product-description">رائحة شرقية فخمة تثبيت 12 ساعة.</div>
-        <div class="product-price">249 ريال</div>
-        <div class="product-footer">
-          <button class="add-to-cart">أضف للسلة</button>
-          <a href="https://sherow1982.github.io/store-ideal/products/product.html?id=1" class="view-more">شاهد المزيد</a>
+        <input type="checkbox" id="flip1">
+        <div class="card-inner">
+          <div class="card-front">
+            <div style="position:relative;width:100%;flex:1;display:flex;flex-direction:column;justify-content:flex-start;">
+              <span class="product-badge">جديد</span>
+              <img src="https://via.placeholder.com/220x180/FFD700/fff?text=عطر" class="product-image">
+            </div>
+            <div class="product-name">عطر ملكي فاخر</div>
+            <div class="product-description">رائحة شرقية فخمة تثبيت 12 ساعة.</div>
+            <div class="product-price">249 ريال</div>
+            <div class="product-footer">
+              <button class="add-to-cart">أضف للسلة</button>
+              <label for="flip1" class="card-toggle">اقلب</label>
+            </div>
+          </div>
+          <div class="card-back">
+            <h3>تفاصيل المنتج</h3>
+            <p>عطر أصلي برائحة شرقية فخمة مع ملمس ناعم يدوم حتى 12 ساعة. عبوة فاخرة مثالية كهدية.</p>
+            <div class="product-footer">
+              <a href="https://sherow1982.github.io/store-ideal/products/product.html?id=1" class="view-more">شاهد المزيد</a>
+              <label for="flip1" class="card-toggle">عودة</label>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- كارت 2 -->
       <div class="product-card">
-        <img src="https://via.placeholder.com/260x220/E8A333/fff?text=ساعة" class="product-image">
-        <span class="product-badge">الأكثر مبيعاً</span>
-        <div class="product-name">ساعة ذكية فاخرة</div>
-        <div class="product-description">تتبع الصحة والنشاط مع تصميم حديث.</div>
-        <div class="product-price">599 ريال</div>
-        <div class="product-footer">
-          <button class="add-to-cart">أضف للسلة</button>
-          <a href="https://sherow1982.github.io/store-ideal/products/product.html?id=2" class="view-more">شاهد المزيد</a>
+        <input type="checkbox" id="flip2">
+        <div class="card-inner">
+          <div class="card-front">
+            <div style="position:relative;width:100%;flex:1;display:flex;flex-direction:column;justify-content:flex-start;">
+              <span class="product-badge">الأكثر مبيعاً</span>
+              <img src="https://via.placeholder.com/220x180/E8A333/fff?text=ساعة" class="product-image">
+            </div>
+            <div class="product-name">ساعة ذكية فاخرة</div>
+            <div class="product-description">تتبع الصحة والنشاط مع تصميم حديث.</div>
+            <div class="product-price">599 ريال</div>
+            <div class="product-footer">
+              <button class="add-to-cart">أضف للسلة</button>
+              <label for="flip2" class="card-toggle">اقلب</label>
+            </div>
+          </div>
+          <div class="card-back">
+            <h3>تفاصيل المنتج</h3>
+            <p>ساعة ذكية حديثة بتقنية متقدمة لتتبع الصحة واللياقة البدنية. شاشة AMOLED وبطارية تدوم أسبوع.</p>
+            <div class="product-footer">
+              <a href="https://sherow1982.github.io/store-ideal/products/product.html?id=2" class="view-more">شاهد المزيد</a>
+              <label for="flip2" class="card-toggle">عودة</label>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- كارت 3 -->
       <div class="product-card">
-        <img src="https://via.placeholder.com/260x220/FF6B9D/fff?text=حقيبة" class="product-image">
-        <div class="product-name">حقيبة جلدية أصلية</div>
-        <div class="product-description">حقيبة يد فاخرة من جلد طبيعي.</div>
-        <div class="product-price">899 ريال</div>
-        <div class="product-footer">
-          <button class="add-to-cart">أضف للسلة</button>
-          <a href="https://sherow1982.github.io/store-ideal/products/product.html?id=3" class="view-more">شاهد المزيد</a>
+        <input type="checkbox" id="flip3">
+        <div class="card-inner">
+          <div class="card-front">
+            <div style="position:relative;width:100%;flex:1;display:flex;flex-direction:column;justify-content:flex-start;">
+              <img src="https://via.placeholder.com/220x180/FF6B9D/fff?text=حقيبة" class="product-image">
+            </div>
+            <div class="product-name">حقيبة جلدية أصلية</div>
+            <div class="product-description">حقيبة يد فاخرة من جلد طبيعي.</div>
+            <div class="product-price">899 ريال</div>
+            <div class="product-footer">
+              <button class="add-to-cart">أضف للسلة</button>
+              <label for="flip3" class="card-toggle">اقلب</label>
+            </div>
+          </div>
+          <div class="card-back">
+            <h3>تفاصيل المنتج</h3>
+            <p>حقيبة يد فاخرة من أجود أنواع الجلد الطبيعي. تصميم عصري وعملي مع جودة عالية وضمان مدى الحياة.</p>
+            <div class="product-footer">
+              <a href="https://sherow1982.github.io/store-ideal/products/product.html?id=3" class="view-more">شاهد المزيد</a>
+              <label for="flip3" class="card-toggle">عودة</label>
+            </div>
+          </div>
         </div>
       </div>
     </div>

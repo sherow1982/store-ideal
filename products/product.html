@@ -8,61 +8,24 @@
 </head>
 <body>
   <a href="https://wa.me/201110760081" class="whatsapp-floating" target="_blank">💬</a>
-
-  <div class="header-top">🚚 توصيل مجاني لأي طلب فوق 200 ريال</div>
   <header class="header">
     <div class="header-main">
       <a href="https://sherow1982.github.io/store-ideal/" class="logo">🛍️ Store Ideal</a>
-      <div class="header-actions">
-        <button class="icon-btn">🛒<span class="badge">0</span></button>
-      </div>
     </div>
   </header>
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="https://sherow1982.github.io/store-ideal/" class="nav-link">الرئيسية</a>
-      <a href="https://sherow1982.github.io/store-ideal/about.html" class="nav-link">عن المتجر</a>
-      <a href="https://sherow1982.github.io/store-ideal/contact.html" class="nav-link">اتصل بنا</a>
-    </div>
-  </nav>
-
   <div class="container">
-    <div class="product-card" style="max-width:520px;margin:40px auto;">
-      <img id="productImage" src="https://via.placeholder.com/400x320/D4AF37/fff?text=منتج" class="product-image">
-      <span class="product-badge" id="productBadge">عرض حصري</span>
+    <div class="product-card" style="max-width:520px;margin:40px auto;height:auto;">
+      <img id="productImage" src="https://via.placeholder.com/400x320/D4AF37/fff?text=منتج" class="product-image" style="width:100%;margin:0 0 20px 0;">
       <h1 class="product-name" id="productName">عطر ملكي فاخر</h1>
       <div class="product-description" id="productDesc">روائح شرقية أصيلة</div>
       <div class="product-price" id="productPrice">430 ريال</div>
-      <div class="product-footer">
-        <button class="add-to-cart">أضف للسلة</button>
-        <a href="https://wa.me/201110760081" target="_blank" class="view-more">استفسر عبر واتساب</a>
-      </div>
     </div>
   </div>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section"><h3>عن Store Ideal</h3><p>متجرك الفاخر الموثوق</p></div>
-    </div>
-    <div class="footer-bottom">© 2025 Store Ideal</div>
-  </footer>
-
+  <footer class="footer"><div class="footer-bottom">© 2025 Store Ideal</div></footer>
   <script>
-    const products = {
-      1: {name: 'عطر ملكي فاخر', image: 'https://via.placeholder.com/400x320/FFD700/fff?text=عطر', price: '249 ريال', badge: 'جديد', desc: 'رائحة شرقية فخمة تثبيت 12 ساعة.'},
-      2: {name: 'ساعة ذكية فاخرة', image: 'https://via.placeholder.com/400x320/E8A333/fff?text=ساعة', price: '599 ريال', badge: 'الأكثر مبيعاً', desc: 'تتبع الصحة والنشاط مع تصميم حديث.'},
-      3: {name: 'حقيبة جلدية أصلية', image: 'https://via.placeholder.com/400x320/FF6B9D/fff?text=حقيبة', price: '899 ريال', badge: 'عرض خاص', desc: 'حقيبة يد فاخرة من جلد طبيعي 100%.'}
-    };
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id') || 1;
-    const product = products[productId];
-    if (product) {
-      document.getElementById('productName').innerText = product.name;
-      document.getElementById('productImage').src = product.image;
-      document.getElementById('productPrice').innerText = product.price;
-      document.getElementById('productBadge').innerText = product.badge;
-      document.getElementById('productDesc').innerText = product.desc;
-    }
+    const products = {1: {name: 'عطر ملكي فاخر', desc: 'رائحة شرقية 12 ساعة'}, 2: {name: 'ساعة ذكية', desc: 'تتبع الصحة'}, 3: {name: 'حقيبة جلدية', desc: 'جلد طبيعي 100%'}};
+    const id = new URLSearchParams(window.location.search).get('id') || 1;
+    if(products[id]) { document.getElementById('productName').innerText = products[id].name; document.getElementById('productDesc').innerText = products[id].desc; }
   </script>
 </body>
 </html>
