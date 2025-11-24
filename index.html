@@ -4,226 +4,252 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>السوق القطري - Wuaze Qatar</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { direction: rtl; font-family: 'Cairo', sans-serif; }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <a href="https://wa.me/201110760081" target="_blank" class="whatsapp-btn">💬</a>
+<body class="bg-gray-50" dir="rtl">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/201110760081" target="_blank" class="fixed bottom-8 left-8 bg-green-500 hover:bg-green-600 text-white rounded-full w-14 h-14 flex items-center justify-center text-2xl shadow-lg z-50 transition-transform hover:scale-110">
+        💬
+    </a>
 
-    <!-- HEADER TOP -->
-    <div class="header-top">
-        <div class="header-top-right">
-            <span>0.00 ر.ق</span>
+    <!-- Header Top -->
+    <div class="bg-[#A4C639] text-white px-6 py-2 flex justify-between items-center text-sm font-semibold">
+        <div class="flex gap-6">
+            <a href="#" class="hover:opacity-80">MY ACCOUNT</a>
         </div>
-        <div class="header-top-left">
-            <a href="#">MY ACCOUNT</a>
-        </div>
+        <span>0.00 ر.ق</span>
     </div>
 
-    <!-- HEADER -->
-    <header class="header">
-        <nav class="nav-container">
-            <a href="index.html" class="nav-link active">الصفحة الرئيسية</a>
-            <a href="#" class="nav-link">المتجر</a>
-            <a href="#" class="nav-link">البطاقات</a>
-            <a href="#" class="nav-link">إقرأ المزيد</a>
-            <a href="#" class="nav-link">تقديم الطلبات</a>
-        </nav>
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <!-- Navigation -->
+            <nav class="flex gap-8 mb-4 flex-wrap">
+                <a href="index.html" class="text-gray-600 font-bold text-xs uppercase border-b-2 border-[#A4C639] text-[#A4C639]">الصفحة الرئيسية</a>
+                <a href="#" class="text-gray-600 font-bold text-xs uppercase border-b-2 border-transparent hover:text-[#A4C639]">المتجر</a>
+                <a href="#" class="text-gray-600 font-bold text-xs uppercase border-b-2 border-transparent hover:text-[#A4C639]">البطاقات</a>
+                <a href="#" class="text-gray-600 font-bold text-xs uppercase border-b-2 border-transparent hover:text-[#A4C639]">إقرأ المزيد</a>
+                <a href="#" class="text-gray-600 font-bold text-xs uppercase border-b-2 border-transparent hover:text-[#A4C639]">تقديم الطلبات</a>
+            </nav>
 
-        <div class="search-container">
-            <select class="search-category">
-                <option>SELECT CATEGORY</option>
-                <option>الإلكترونيات</option>
-                <option>الملابس</option>
-            </select>
-            <input type="text" class="search-input" placeholder="Search for products">
+            <!-- Search -->
+            <div class="flex gap-3">
+                <select class="px-3 py-2 border border-gray-300 rounded text-sm bg-white font-cairo">
+                    <option>SELECT CATEGORY</option>
+                    <option>الإلكترونيات</option>
+                    <option>الملابس</option>
+                    <option>الأثاث</option>
+                </select>
+                <input type="text" placeholder="Search for products" class="flex-1 px-3 py-2 border border-gray-300 rounded text-sm focus:outline-none focus:border-[#A4C639]">
+            </div>
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1>منتجات فاخرة بأسعار مميزة</h1>
-        <p>اكتشف أفضل العروض والمنتجات المختارة بعناية</p>
-        <button class="hero-btn">تسوق الآن</button>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-100 to-white py-12 px-6 text-center">
+        <h1 class="text-4xl font-black text-gray-800 mb-3">منتجات فاخرة بأسعار مميزة</h1>
+        <p class="text-gray-600 mb-6">اكتشف أفضل العروض والمنتجات المختارة بعناية</p>
+        <button class="bg-[#A4C639] hover:bg-[#92B023] text-white px-8 py-3 rounded font-bold transition-colors">تسوق الآن</button>
     </section>
 
-    <!-- PRODUCTS -->
-    <div class="container">
-        <h2 class="section-title">المنتجات المميزة</h2>
+    <!-- Products Section -->
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <h2 class="text-3xl font-black text-center mb-10 text-gray-800">المنتجات المميزة</h2>
 
-        <div class="products-grid">
-            <!-- PRODUCT 1 -->
-            <div class="product-card">
-                <span class="product-badge">-18%</span>
-                <img src="https://via.placeholder.com/240x240/4CAF50/fff?text=Product1" alt="منتج" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-name">جهاز مساج القدمين</h3>
-                    <p class="product-description">جهاز تدليك احترافي</p>
-                    <div class="price-section">
-                        <div class="product-price">
-                            <span class="price-new">231.20 ر.ق</span>
-                            <span class="price-old">281.20</span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <!-- Product 1 -->
+            <div class="bg-white rounded shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/300x250/4CAF50/fff?text=Product1" alt="منتج" class="w-full h-60 object-cover">
+                    <span class="absolute top-3 right-3 bg-[#A4C639] text-white px-3 py-1 rounded-full text-xs font-bold">-18%</span>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-sm mb-2 text-right">جهاز مساج القدمين</h3>
+                    <p class="text-gray-600 text-xs mb-3 text-right">جهاز تدليك احترافي</p>
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="text-right">
+                            <span class="text-lg font-black text-[#A4C639]">231.20 ر.ق</span>
+                            <span class="text-xs text-gray-400 line-through mr-2">281.20</span>
                         </div>
                     </div>
-                    <div class="button-section">
-                        <button class="btn-add">أضف للسلة</button>
-                        <a href="products/product.html?id=1" class="btn-view">عرض</a>
+                    <div class="flex gap-2">
+                        <button class="flex-1 bg-gray-100 hover:bg-[#A4C639] text-gray-800 hover:text-white px-3 py-2 rounded text-xs font-bold transition-colors border border-gray-300 hover:border-[#A4C639]">أضف للسلة</button>
+                        <a href="products/product.html?id=1" class="flex-1 bg-[#A4C639] hover:bg-[#92B023] text-white px-3 py-2 rounded text-xs font-bold transition-colors text-center">عرض</a>
                     </div>
                 </div>
             </div>
 
-            <!-- PRODUCT 2 -->
-            <div class="product-card">
-                <span class="product-badge">-20%</span>
-                <img src="https://via.placeholder.com/240x240/FF9800/fff?text=Product2" alt="منتج" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-name">جهاز الخدمة الذكي</h3>
-                    <p class="product-description">جهاز ذكي متقدم الميزات</p>
-                    <div class="price-section">
-                        <div class="product-price">
-                            <span class="price-new">205.00 ر.ق</span>
-                            <span class="price-old">255.00</span>
+            <!-- Product 2 -->
+            <div class="bg-white rounded shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/300x250/FF9800/fff?text=Product2" alt="منتج" class="w-full h-60 object-cover">
+                    <span class="absolute top-3 right-3 bg-[#A4C639] text-white px-3 py-1 rounded-full text-xs font-bold">-20%</span>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-sm mb-2 text-right">جهاز الخدمة الذكي</h3>
+                    <p class="text-gray-600 text-xs mb-3 text-right">جهاز ذكي متقدم الميزات</p>
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="text-right">
+                            <span class="text-lg font-black text-[#A4C639]">205.00 ر.ق</span>
+                            <span class="text-xs text-gray-400 line-through mr-2">255.00</span>
                         </div>
                     </div>
-                    <div class="button-section">
-                        <button class="btn-add">أضف للسلة</button>
-                        <a href="products/product.html?id=2" class="btn-view">عرض</a>
+                    <div class="flex gap-2">
+                        <button class="flex-1 bg-gray-100 hover:bg-[#A4C639] text-gray-800 hover:text-white px-3 py-2 rounded text-xs font-bold transition-colors border border-gray-300 hover:border-[#A4C639]">أضف للسلة</button>
+                        <a href="products/product.html?id=2" class="flex-1 bg-[#A4C639] hover:bg-[#92B023] text-white px-3 py-2 rounded text-xs font-bold transition-colors text-center">عرض</a>
                     </div>
                 </div>
             </div>
 
-            <!-- PRODUCT 3 -->
-            <div class="product-card">
-                <span class="product-badge">-18%</span>
-                <img src="https://via.placeholder.com/240x240/2196F3/fff?text=Product3" alt="منتج" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-name">جهاز إزالة الشعر</h3>
-                    <p class="product-description">تكنولوجيا حديثة وآمنة</p>
-                    <div class="price-section">
-                        <div class="product-price">
-                            <span class="price-new">223.70 ر.ق</span>
-                            <span class="price-old">273.70</span>
+            <!-- Product 3 -->
+            <div class="bg-white rounded shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/300x250/2196F3/fff?text=Product3" alt="منتج" class="w-full h-60 object-cover">
+                    <span class="absolute top-3 right-3 bg-[#A4C639] text-white px-3 py-1 rounded-full text-xs font-bold">-18%</span>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-sm mb-2 text-right">جهاز إزالة الشعر</h3>
+                    <p class="text-gray-600 text-xs mb-3 text-right">تكنولوجيا حديثة وآمنة</p>
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="text-right">
+                            <span class="text-lg font-black text-[#A4C639]">223.70 ر.ق</span>
+                            <span class="text-xs text-gray-400 line-through mr-2">273.70</span>
                         </div>
                     </div>
-                    <div class="button-section">
-                        <button class="btn-add">أضف للسلة</button>
-                        <a href="products/product.html?id=3" class="btn-view">عرض</a>
+                    <div class="flex gap-2">
+                        <button class="flex-1 bg-gray-100 hover:bg-[#A4C639] text-gray-800 hover:text-white px-3 py-2 rounded text-xs font-bold transition-colors border border-gray-300 hover:border-[#A4C639]">أضف للسلة</button>
+                        <a href="products/product.html?id=3" class="flex-1 bg-[#A4C639] hover:bg-[#92B023] text-white px-3 py-2 rounded text-xs font-bold transition-colors text-center">عرض</a>
                     </div>
                 </div>
             </div>
 
-            <!-- PRODUCT 4 -->
-            <div class="product-card">
-                <span class="product-badge">-15%</span>
-                <img src="https://via.placeholder.com/240x240/9C27B0/fff?text=Product4" alt="منتج" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-name">آلة الخياطة المحمولة</h3>
-                    <p class="product-description">آلة خياطة صغيرة وعملية</p>
-                    <div class="price-section">
-                        <div class="product-price">
-                            <span class="price-new">277.70 ر.ق</span>
-                            <span class="price-old">327.70</span>
+            <!-- Product 4 -->
+            <div class="bg-white rounded shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/300x250/9C27B0/fff?text=Product4" alt="منتج" class="w-full h-60 object-cover">
+                    <span class="absolute top-3 right-3 bg-[#A4C639] text-white px-3 py-1 rounded-full text-xs font-bold">-15%</span>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-sm mb-2 text-right">آلة الخياطة المحمولة</h3>
+                    <p class="text-gray-600 text-xs mb-3 text-right">آلة خياطة صغيرة وعملية</p>
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="text-right">
+                            <span class="text-lg font-black text-[#A4C639]">277.70 ر.ق</span>
+                            <span class="text-xs text-gray-400 line-through mr-2">327.70</span>
                         </div>
                     </div>
-                    <div class="button-section">
-                        <button class="btn-add">أضف للسلة</button>
-                        <a href="products/product.html?id=4" class="btn-view">عرض</a>
+                    <div class="flex gap-2">
+                        <button class="flex-1 bg-gray-100 hover:bg-[#A4C639] text-gray-800 hover:text-white px-3 py-2 rounded text-xs font-bold transition-colors border border-gray-300 hover:border-[#A4C639]">أضف للسلة</button>
+                        <a href="products/product.html?id=4" class="flex-1 bg-[#A4C639] hover:bg-[#92B023] text-white px-3 py-2 rounded text-xs font-bold transition-colors text-center">عرض</a>
                     </div>
                 </div>
             </div>
 
-            <!-- PRODUCT 5 -->
-            <div class="product-card">
-                <img src="https://via.placeholder.com/240x240/E91E63/fff?text=Product5" alt="منتج" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-name">منتج متميز خامس</h3>
-                    <p class="product-description">منتج عالي الجودة</p>
-                    <div class="price-section">
-                        <div class="product-price">
-                            <span class="price-new">199.00 ر.ق</span>
-                            <span class="price-old">249.00</span>
+            <!-- Product 5 -->
+            <div class="bg-white rounded shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/300x250/E91E63/fff?text=Product5" alt="منتج" class="w-full h-60 object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-sm mb-2 text-right">منتج متميز خامس</h3>
+                    <p class="text-gray-600 text-xs mb-3 text-right">منتج عالي الجودة</p>
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="text-right">
+                            <span class="text-lg font-black text-[#A4C639]">199.00 ر.ق</span>
+                            <span class="text-xs text-gray-400 line-through mr-2">249.00</span>
                         </div>
                     </div>
-                    <div class="button-section">
-                        <button class="btn-add">أضف للسلة</button>
-                        <a href="products/product.html?id=5" class="btn-view">عرض</a>
+                    <div class="flex gap-2">
+                        <button class="flex-1 bg-gray-100 hover:bg-[#A4C639] text-gray-800 hover:text-white px-3 py-2 rounded text-xs font-bold transition-colors border border-gray-300 hover:border-[#A4C639]">أضف للسلة</button>
+                        <a href="products/product.html?id=5" class="flex-1 bg-[#A4C639] hover:bg-[#92B023] text-white px-3 py-2 rounded text-xs font-bold transition-colors text-center">عرض</a>
                     </div>
                 </div>
             </div>
 
-            <!-- PRODUCT 6 -->
-            <div class="product-card">
-                <img src="https://via.placeholder.com/240x240/00BCD4/fff?text=Product6" alt="منتج" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-name">منتج متميز سادس</h3>
-                    <p class="product-description">منتج اختيار مميز</p>
-                    <div class="price-section">
-                        <div class="product-price">
-                            <span class="price-new">159.00 ر.ق</span>
-                            <span class="price-old">199.00</span>
+            <!-- Product 6 -->
+            <div class="bg-white rounded shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/300x250/00BCD4/fff?text=Product6" alt="منتج" class="w-full h-60 object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-sm mb-2 text-right">منتج متميز سادس</h3>
+                    <p class="text-gray-600 text-xs mb-3 text-right">منتج اختيار مميز</p>
+                    <div class="flex justify-between items-center mb-3">
+                        <div class="text-right">
+                            <span class="text-lg font-black text-[#A4C639]">159.00 ر.ق</span>
+                            <span class="text-xs text-gray-400 line-through mr-2">199.00</span>
                         </div>
                     </div>
-                    <div class="button-section">
-                        <button class="btn-add">أضف للسلة</button>
-                        <a href="products/product.html?id=6" class="btn-view">عرض</a>
+                    <div class="flex gap-2">
+                        <button class="flex-1 bg-gray-100 hover:bg-[#A4C639] text-gray-800 hover:text-white px-3 py-2 rounded text-xs font-bold transition-colors border border-gray-300 hover:border-[#A4C639]">أضف للسلة</button>
+                        <a href="products/product.html?id=6" class="flex-1 bg-[#A4C639] hover:bg-[#92B023] text-white px-3 py-2 rounded text-xs font-bold transition-colors text-center">عرض</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- FEATURES -->
-    <div class="container">
-        <div class="features-section">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🚚</div>
-                    <h3 class="feature-title">توصيل سريع</h3>
-                    <p class="feature-text">توصيل مجاني لجميع أنحاء الدول</p>
+    <!-- Features Section -->
+    <div class="bg-white py-12 px-6 mb-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 p-6 rounded border border-gray-200 text-center">
+                    <div class="text-3xl mb-3">🚚</div>
+                    <h3 class="font-bold text-sm mb-2">توصيل سريع</h3>
+                    <p class="text-xs text-gray-600">توصيل مجاني لجميع أنحاء الدول</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">✅</div>
-                    <h3 class="feature-title">منتجات أصلية</h3>
-                    <p class="feature-text">ضمان أصالة 100% لكل المنتجات</p>
+                <div class="bg-gray-50 p-6 rounded border border-gray-200 text-center">
+                    <div class="text-3xl mb-3">✅</div>
+                    <h3 class="font-bold text-sm mb-2">منتجات أصلية</h3>
+                    <p class="text-xs text-gray-600">ضمان أصالة 100% لكل المنتجات</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💳</div>
-                    <h3 class="feature-title">دفع آمن</h3>
-                    <p class="feature-text">جميع طرق الدفع الآمنة متاحة</p>
+                <div class="bg-gray-50 p-6 rounded border border-gray-200 text-center">
+                    <div class="text-3xl mb-3">💳</div>
+                    <h3 class="font-bold text-sm mb-2">دفع آمن</h3>
+                    <p class="text-xs text-gray-600">جميع طرق الدفع الآمنة متاحة</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📞</div>
-                    <h3 class="feature-title">دعم 24/7</h3>
-                    <p class="feature-text">فريق عمل متواجد دائماً</p>
+                <div class="bg-gray-50 p-6 rounded border border-gray-200 text-center">
+                    <div class="text-3xl mb-3">📞</div>
+                    <h3 class="font-bold text-sm mb-2">دعم 24/7</h3>
+                    <p class="text-xs text-gray-600">فريق عمل متواجد دائماً</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>عن المتجر</h3>
-                <p>متجر متخصص في بيع منتجات فاخرة مختارة بعناية مع ضمان الأصالة والجودة العالية</p>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold mb-3 text-[#A4C639]">عن المتجر</h3>
+                    <p class="text-sm text-gray-300">متجر متخصص في بيع منتجات فاخرة مختارة بعناية مع ضمان الأصالة والجودة العالية</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-3 text-[#A4C639]">روابط سريعة</h3>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                        <li><a href="#" class="hover:text-white">عن المتجر</a></li>
+                        <li><a href="#" class="hover:text-white">سياسة الخصوصية</a></li>
+                        <li><a href="#" class="hover:text-white">شروط الخدمة</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-3 text-[#A4C639]">تواصل معنا</h3>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                        <li><a href="tel:+97450123456" class="hover:text-white">+974 50 123 456</a></li>
+                        <li><a href="mailto:info@alsoq.com" class="hover:text-white">info@alsoq.com</a></li>
+                        <li><a href="https://wa.me/201110760081" target="_blank" class="hover:text-white">WhatsApp</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>روابط سريعة</h3>
-                <ul>
-                    <li><a href="#">عن المتجر</a></li>
-                    <li><a href="#">سياسة الخصوصية</a></li>
-                    <li><a href="#">شروط الخدمة</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>تواصل معنا</h3>
-                <ul>
-                    <li><a href="tel:+97450123456">+974 50 123 456</a></li>
-                    <li><a href="mailto:info@alsoq.com">info@alsoq.com</a></li>
-                    <li><a href="https://wa.me/201110760081" target="_blank">WhatsApp</a></li>
-                </ul>
+            <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+                © 2025 السوق القطري - جميع الحقوق محفوظة
             </div>
         </div>
-        <div class="footer-bottom">© 2025 السوق القطري - جميع الحقوق محفوظة</div>
     </footer>
 </body>
 </html>
