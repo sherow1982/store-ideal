@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://sherow1982.github.io/store-ideal/style.css">
 </head>
 <body>
+  <a href="https://wa.me/201110760081" class="whatsapp-floating" title="تواصل معنا عبر واتساب">💬</a>
+
   <div class="header-top">🔥 خصومات حتى 50% لفترة محدودة فقط!</div>
   <header class="header">
     <div class="header-main">
@@ -35,28 +37,39 @@
   <div class="container" id="products">
     <h2 class="section-title">منتجاتنا المميزة</h2>
     <div class="products-grid">
-      <div class="product-card">
+      <div class="product-card" onclick="goToProduct(1)">
         <img src="https://via.placeholder.com/260x220/FFD700/fff?text=عطر" class="product-image">
         <span class="product-badge">جديد</span>
         <div class="product-name">عطر ملكي فاخر</div>
         <div class="product-description">رائحة شرقية فخمة تثبيت 12 ساعة.</div>
         <div class="product-price">249 ريال</div>
-        <button class="add-to-cart">أضف للسلة</button>
+        <div class="product-footer">
+          <button class="add-to-cart">أضف للسلة</button>
+          <button class="view-more" onclick="event.stopPropagation()">شاهد المزيد</button>
+        </div>
       </div>
-      <div class="product-card">
+
+      <div class="product-card" onclick="goToProduct(2)">
         <img src="https://via.placeholder.com/260x220/E8A333/fff?text=ساعة" class="product-image">
         <span class="product-badge">الأكثر مبيعاً</span>
         <div class="product-name">ساعة ذكية فاخرة</div>
         <div class="product-description">تتبع الصحة والنشاط مع تصميم حديث.</div>
         <div class="product-price">599 ريال</div>
-        <button class="add-to-cart">أضف للسلة</button>
+        <div class="product-footer">
+          <button class="add-to-cart">أضف للسلة</button>
+          <button class="view-more" onclick="event.stopPropagation()">شاهد المزيد</button>
+        </div>
       </div>
-      <div class="product-card">
+
+      <div class="product-card" onclick="goToProduct(3)">
         <img src="https://via.placeholder.com/260x220/FF6B9D/fff?text=حقيبة" class="product-image">
         <div class="product-name">حقيبة جلدية أصلية</div>
         <div class="product-description">حقيبة يد فاخرة من جلد طبيعي.</div>
         <div class="product-price">899 ريال</div>
-        <button class="add-to-cart">أضف للسلة</button>
+        <div class="product-footer">
+          <button class="add-to-cart">أضف للسلة</button>
+          <button class="view-more" onclick="event.stopPropagation()">شاهد المزيد</button>
+        </div>
       </div>
     </div>
   </div>
@@ -102,11 +115,17 @@
         <h3>تواصل معنا</h3>
         <ul class="footer-links">
           <li><a href="mailto:info@store.com">📧 info@store.com</a></li>
-          <li><a href="https://wa.me/966501234567">📱 +966 50 123 4567</a></li>
+          <li><a href="https://wa.me/201110760081">📱 واتساب</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">© 2025 Store Ideal - جميع الحقوق محفوظة ❤️</div>
   </footer>
+
+  <script>
+    function goToProduct(productId) {
+      window.location.href = 'https://sherow1982.github.io/store-ideal/products/product.html?id=' + productId;
+    }
+  </script>
 </body>
 </html>
